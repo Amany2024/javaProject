@@ -42,6 +42,7 @@ public class JavaAssignment {
         //4.Ternary operator
         System.out.println (num1 > num2 ? "num1 is greater" : "num2 is greater");
         System.out.println (num1 % 2==0? "num1 is even": "num2 is odd");
+        Scanner.close();
 
 
 
