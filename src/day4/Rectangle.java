@@ -1,10 +1,29 @@
 package day4;
 
 public class Rectangle {
-    private double length;
-    private double width;
-//Note : 1- make fields private
-//       2- make methods public
+    protected double length;
+    protected double width;
+    protected int sides=4;
+    private static int counter;
+
+    public int getCounter() {
+        return counter;
+    }
+
+    public Rectangle(){                                            //the same name of the class
+        System.out.println("Iam default constructor");           //default constructor  , always public, runs in the begin of life cycle,can not be called more than one time
+        length=0;
+        width=0;
+        counter++;
+    }
+    public Rectangle(double length,double width){
+        System.out.println("Iam parameterized constructor ");
+        this.length=length;
+        this.width=width;
+        counter++;
+    }
+                                                //Note : 1- make fields private
+                                                //       2- make methods public
 
     //setters
     public void setLength(double length)
